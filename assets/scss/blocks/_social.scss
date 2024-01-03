@@ -1,0 +1,25 @@
+.social {
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: rem(23px);
+        padding: 0;
+    }
+
+    &__item {
+        width: rem(40px);
+        height: rem(40px);
+    }
+
+    &__icon {
+
+        &-pic {
+            color: $color-footer-icon;
+            transition: $transition;
+
+            &:hover {
+                color: $light-slate-grey;
+            }
+        }
+    }
+}

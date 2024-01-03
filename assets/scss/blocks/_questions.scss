@@ -1,0 +1,27 @@
+.questions {
+
+    max-width: rem(770px);
+    margin: 0 auto;
+
+    &__title {
+        margin-bottom: rem(24px);
+
+        &--second {
+            margin-top: rem(56px);
+        }
+    }
+
+    &__button {
+        font-size: rem($font-size-tiny);
+
+        margin-top: rem(50px);
+
+        @media #{$screen-desktop} {
+            margin-top: rem(80px);
+        }
+
+        &-btn {
+            height: rem(50px);
+        }
+    }
+}

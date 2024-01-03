@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    max-width: rem($width-container + 2 * $gap-container);
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: rem($gap-container);
+    padding-right: rem($gap-container);
+
+    &--sidebar {
+
+        @media #{$screen-desktop} {
+            display: flex;
+            gap: rem($gap-sidebar);
+            flex-direction: row;
+        }
+
+        &-block {
+            flex-grow: 1;  
+
+            @media #{$screen-desktop-max} {
+                margin-top: rem(30px);
+            }
+        }
+
+        &-title {
+            padding: rem(10px) 0 rem(30px);
+
+
+            @media #{$screen-desktop} {
+                padding: rem(15px) 0 rem(40px);
+            }
+        }
+    }
+
+    &--sidebar & {
+        
+        &__sidebar {
+            flex-shrink: 0;
+            align-self: flex-start;
+        }
+    }
+
+    &--slider {
+        margin-bottom: rem(130px);
+    }
+}

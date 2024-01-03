@@ -1,0 +1,28 @@
+.about {
+    width: 100%;
+
+    @media #{$screen-tablet} {
+        width: rem(580px);
+    }
+
+    margin-bottom: rem(40px);    
+
+    &__title {
+        font-weight: $font-weight-medium;
+        margin-bottom: rem(20px);
+    }
+
+    &__descr {
+        font-weight: $font-weight-medium;
+    }
+
+    &__text {
+        font-size: rem(14px);
+
+        margin-bottom: rem(11px);
+
+        &--hide {
+            display: none;
+        }
+    }
+}

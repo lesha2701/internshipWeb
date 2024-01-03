@@ -1,0 +1,14 @@
+.block-gui {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(30px);
+
+    &--input {
+        align-items: normal;
+    }
+
+    &__title {
+        padding: rem(20px) 0;
+    }
+}

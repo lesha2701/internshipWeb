@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>gui</title>
+</head>
+<body class="page" data-page="page">
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__pic" src="./public/images/icons/logo-svg.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__col header__col--search">
+                    <form class="form">
+                        <div class="form__row">
+                            <div class="form__col">
+                                <div class="header__search input-text input-text__search ">
+                                    <button href="#" class="input-text__search-icon">
+                                        <svg class="icon input-text__search-icon__svg">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-Search"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="input-text__field input-text__search-input field" type="text" placeholder="Найти...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__col header__col--profile">
+                    <div class="profile profile--hidden">
+                        <a href="#" class="profile__link">
+                            <div class="profile__block">
+                                <div class="profile__name">
+                                    <span class="profile__name-text">Алексей Тюленев</span>
+                                </div>
+                                <div class="profile__avatar">
+                                    <img class="profile__avatar-pic" src="./public/images/lamp.png" alt="">
+                                </div>
+                            </div>
+                            <div class="profile__icon">
+                                <svg class="profile__icon-pic icon">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-Profile"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__wrapper page__wrapper--slider">
+        <div class="container container--sidebar container--slider">
+            <aside class="container__sidebar sidebar">
+                <div class="sidebar__items"> 
+                    <div class="sidebar__block">
+                        <div class="sidebar__title sidebar__title--desktop">
+                            <p class="sidebar__text">Меню раздела</p>
+                            <button class="sidebar__close">
+                                <svg class="sidebar__close-pic icon">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-Close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__link--active">Избранное</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Моя компания</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Моё развитие</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Новости компании</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Телефонная книга</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar__menu" data-sidebar="menu">
+                    <button class="sidebar__menu-btn">
+                        <svg class="sidebar__menu-pic icon">
+                            <use xlink:href="./public/images/icons/sprite.svg#icon-menu"></use>
+                        </svg>
+                        <p class="sidebar__menu-text">Меню раздела</p>
+                    </button>
+                </div>
+            </aside>
+
+            <div class="container--sidebar-block">
+                <nav class="breadcrumbs breadcrumbs--indent">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главаня</a>
+                        </li>
+            
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Статья</a>
+                        </li>
+            
+                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                            <a class="breadcrumbs__link">Как верстать</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>FAQ</h1>
+                <main class="contents">
+                    <section class="contents__questions questions">
+                        <div class="questions__accordion accordion">
+                            <h3 class="questions__title">Регистрация</h3>
+                            <div class="accordion__item accordion__item--opened" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Обязательно ли регистрироваться на сайте, чтобы заказать продукцию?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body accordion__body--open" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Взимается ли плата за регистрацию?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Что такое логин?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Может ли человек, не являющийся гражданином России, стать зарегистрированным Покупателем?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Что делать, если при регистрации  указал неверные данные?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Как поменять пароль для входа в личный кабинет?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+                            <h3 class="questions__title questions__title--second">Личный кабинет</h3>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Что делать, если я забыл свой пароль от личного кабинета?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Где я могу добавить/изменить электронный адрес (email)?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Где я могу добавить/изменить номер телефона?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-accordion>
+                                <div class="accordion__header" data-accordion-toggle>
+                                    <h3 class="accordion__title">Каким образом я могу изменить свои персональные данные в личном кабинете?</h3>
+                                    <button class="accordion__toggle button button--circle button--icon">
+                                        <span class="button__icon">
+                                            <svg class="accordion__toggle-icon icon button-pic">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+            
+                                <div class="accordion__body" data-accordion-content>
+                                    Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions__button">
+                            <button class="button questions__button-btn" data-modal-type="modal"
+                            data-src="#techical-support-2">Обратиться в техподдержку</button>
+                        </div>
+                        <article id="techical-support-2" class="modal modal--small modal--centered modal--email" style="display: none;">
+                            <div class="modal__content">
+                                <header class="modal__section modal__section--header">
+                                    <p class="modal__title">Техническая поддержка</p>
+                                </header>
+                                <section class="modal__section modal__section--content">
+                                    <form class=" modal__form form">
+                                        <div class="modal__form-input modal__form-input--email">
+                                            <div class="form__row">
+                                                <div class="form__col">
+                                                    <div class="input-text">
+                                                        <label class="input-text__label input-text__label--main input-text__label--obligatory label" for="text">Тип обращения</label>
+                                                        <div class="input-text__select">
+                                                            <div class="select" data-select>
+                                                                <select name="select" class="select__control" data-select-control data-modal data-placeholder="Выберите тип обращения">
+                                                                    <option></option>
+                                                                    <option value="question">Задать вопрос</option>
+                                                                    <option value="bug">Неработающая функциональность</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__row modal__section--remove" data-modal-email>
+                                                <div class="form__col">
+                                                    <div class="input-text">
+                                                        <label class="input-text__label input-text__label--main input-text__label--obligatory label" for="email">E-Mail</label>
+                                                        <input class="input-text__field field" type="text" placeholder="E-Mail..." name="email" data-inputmask="'alias': 'email'">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__row">
+                                                <div class="form__col">
+                                                    <div class="textarea">
+                                                        <label class="textarea__label label" id="textarea">Напишите вопрос</label>
+                                                        <textarea class="textarea__field" id="textarea" placeholder="Причина"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal__section--actions">
+                                            <button class="modal__button button">Отправить</button>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                        </article>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews__slider slider slider--infinity">
+                <div class="slider__box" data-carousel="infinity">
+                    <div class="swiper-container" data-carousel-container>
+                        <ul class="reviews__list swiper-wrapper">
+                            <li class="reviews__item swiper-slide swiper-slide--infinity">
+                                <article class="review review--slide">
+                                    <div class="review__user user">
+                                        <img class="user__icon" src="./public/images/lamp.png" alt="profile_picture">
+                                        <p class="user__name">Алексей Тюленев</p>
+                                        <p class="user__date">05.04.2019</p>
+                                    </div>
+                                    <p class="review__text">Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке! Вы можете приобрести нашу продукцию через наших партнеров - </p>
+                                    <div class="review__image">
+                                        <img class="review__pic" src="./public/images/icons/magnit.svg" alt="">
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="reviews__item swiper-slide swiper-slide--infinity">
+                                <article class="review review--slide">
+                                    <div class="review__user user">
+                                        <img class="user__icon" src="./public/images/icons/copybook.png" alt="profile_picture">
+                                        <p class="user__name">Антон Антонов</p>
+                                        <p class="user__date">15.03.2019</p>
+                                    </div>
+                                    <p class="review__text">Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!  </p>
+                                    <div class="review__image">
+                                        <img class="review__pic" src="./public/images/icons/sber.svg" alt="">
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="reviews__item swiper-slide swiper-slide--infinity">
+                                <article class="review review--slide">
+                                    <div class="review__user user">
+                                        <img class="user__icon" src="./public/images/icons/news1.png" alt="profile_picture">
+                                        <p class="user__name">Алексей Тюленев test</p>
+                                        <p class="user__date">05.04.2019</p>
+                                    </div>
+                                    <p class="review__text">Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!  </p>
+                                    <div class="review__image">
+                                        <img class="review__pic" src="./public/images/icons/magnit.svg" alt="">
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="slider__buttons">
+                            <div class="slider__buttons-item swiper-button-prev" data-carousel-prev>
+                                <button type="button" class="slider__button slider__button--prev button--circle">
+                                    <svg class="slider__button-icon icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_slider"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="slider__buttons-item swiper-button-next" data-carousel-next>
+                                <button type="button" class="slider__button slider__button--next button--circle">
+                                    <svg class="slider__button-icon icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_slider"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__col">
+                <div class="footer__row">
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-youTube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row footer__row--menu">
+                    <div class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    
+                    <div class="footer__logo logo">
+                        <a href="#" class="logo__icon">
+                            <svg class="logo__icon-pic logo__footer-pic icon">
+                                <use xlink:href="./public/images/icons/sprite.svg#icon-logoSvg"></use>
+                            </svg>
+                        </a>         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

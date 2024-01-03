@@ -1,0 +1,55 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--big {
+        z-index: $z-middle;
+    }
+
+    &--big & {
+
+        &__data {
+            color: $color-white;
+        }
+    }
+
+    &--stoks  & {
+
+        &__sentence {
+            @media #{$screen-tablet} {
+                display: block;
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        @include paddind-for-cards;
+        position: relative;
+    }
+
+    &__data {
+        @include cards-info;
+
+        margin: 0;
+    }
+
+    &__sentence {
+        @include cards-info;
+
+        display: none;
+
+        margin: 0;
+
+        &::after {
+            @include line-for-cards;
+
+            left: 0;
+        }
+    }
+}

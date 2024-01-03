@@ -1,0 +1,18 @@
+.logo {
+
+    width: rem(130px);
+    height: rem(30px);
+
+    &__pic {
+        padding: 0;
+    }
+
+    &__footer-pic {
+        color: $color-footer-icon;
+        transition: $transition;
+
+         &:hover {
+            color: $light-slate-grey;
+         }
+    }
+}

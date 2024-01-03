@@ -1,0 +1,54 @@
+.editor {
+
+    margin: 0 auto;
+    max-width: rem(700px);
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: rem(30px);
+        margin-bottom: rem(50px);
+
+        &--gap {
+            gap: rem(20);
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: rem(40px);
+    }
+
+    &__input {
+        width: 100%;
+
+        @media #{$screen-tablet} {
+            width: rem(335px);
+        }
+    }
+
+    &__checkbox-radio {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20px);
+    }
+
+    &__textarea {
+        margin-top: rem(10px);
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: flex-end;
+        gap: rem(22px);
+
+        &-text {
+            font-size: $font-size-tiny;
+        }
+    }
+
+    &__title {
+        font-size: rem(24px);
+    }
+}

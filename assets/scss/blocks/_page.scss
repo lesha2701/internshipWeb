@@ -1,0 +1,43 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    &--details {
+        overflow: hidden;
+    }
+
+    &__header {
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-shrink: 0;
+    }
+
+    &__main,
+    &__wrapper {
+        display: flex;  
+        flex-direction: column;
+        flex-grow: 1;
+
+        margin-top: rem(105px);
+        padding-top: rem(50px);
+        padding-bottom: rem(100px);
+
+        @media #{$screen-tablet} {
+            margin-top: rem(80px);
+            padding-top: rem(50px);
+        }
+
+        &--slider {
+            padding-bottom: rem(40px);
+        }
+    }
+
+    &__footer {
+        flex-shrink: 0;
+    }
+}

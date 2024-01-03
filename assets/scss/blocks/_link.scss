@@ -1,0 +1,35 @@
+.link {
+    color: $color-accent;
+    font-size: $font-size-tiny;
+    line-height: $line-height-high;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    &--button {
+        padding: rem($top-padding-link-slider) rem($left-padding-link-slider);
+        background-color: $color-accent;
+        color: $color-white;
+        border-radius: rem($main-border-radius);
+
+        &:hover {
+            background-color: $light-blue-gray;
+            text-decoration: none;
+        }
+    
+        &:active {
+            opacity: 0.5;
+        }
+
+        &--slider {
+            border-radius: rem(5px) 0 rem(5px) 0
+        }
+    }
+}

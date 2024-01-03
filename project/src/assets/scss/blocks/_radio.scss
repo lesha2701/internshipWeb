@@ -1,0 +1,48 @@
+.radio {
+
+    display: flex;
+    align-items: center;
+    gap: rem(8px);
+
+    &__hidden {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__hidden:checked + & {
+
+        &__flag {
+            color: $color-accent;
+        }
+    }
+
+    &__hidden:disabled + & {
+
+        &__flag {
+            color: $color-disabled;
+            border-color: $color-disabled;
+            background-color: $color-no-active;
+        }
+    }
+
+    &__hidden:not(:checked):disabled + & {
+
+        &__flag {
+            color: $color-no-active;
+        }
+    }
+
+    &__flag {
+
+        flex-shrink: 0;
+
+        width: rem($radio-width);
+        height: rem($radio-height);
+
+        color: $color-white;
+
+        border: 1px solid $color-accent;
+        border-radius: 50%;
+    }
+}

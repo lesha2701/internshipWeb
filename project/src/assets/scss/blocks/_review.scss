@@ -1,0 +1,92 @@
+// .review {
+//     display: flex;
+//     flex-direction: column;
+//     gap: rem(11px);
+
+//     padding: rem(20px);
+//     margin: rem(10px) 0;
+//     border-radius: $border-review;
+
+//     background-color: $color-white;
+
+//     box-shadow: 0px 4px 12px rgba(38, 94, 107, 0.25);
+
+//     @media #{$screen-tablet} {
+//         gap: rem(15px);
+//     }
+
+//     @media #{$screen-desktop} {
+//         padding: rem(30px);
+//         gap: rem(20px);
+//     }
+
+//     &--slide {
+//         width: rem(288px);
+//         height: rem(250px);
+
+//         @media #{$screen-tablet} {
+//             width: rem(340px);
+//         }
+
+//         @media #{$screen-desktop} {
+//             width: rem(580px);
+//             height: rem(300px);
+//         }
+//     }
+
+//     &__text {
+//         font-size: $font-size-review-small;
+//         line-height: $line-height-review-small;
+//         font-weight: $font-weight-medium;
+
+//         flex-grow: 1;
+
+//         color: #69676D;
+
+//         margin: 0;
+
+//         max-height: rem(123px);
+
+//         display: -webkit-box;
+//         -webkit-box-orient: vertical;
+//         overflow: hidden;
+//         -webkit-line-clamp: 8;
+
+//         @media #{$screen-tablet} {
+//             font-size: $font-size-review-middle;
+//             line-height: $line-height-review-middle;
+
+//             -webkit-line-clamp: 7;
+//         }
+
+//         @media #{$screen-desktop} {
+//             font-size: $font-size-review-big;
+//             line-height: $line-height-review-big;
+
+//             -webkit-line-clamp: 6;
+//         }
+//     }
+
+//     &__image {
+//         max-width: rem(60px);
+//         max-height: rem(16px);
+
+//         @media #{$screen-tablet} {
+//             max-width: rem(74px);
+//             max-height: rem(20px);
+//         }
+
+//         @media #{$screen-desktop} {
+//             max-width: rem(89px);
+//             max-height: rem(24px);
+//         }
+
+//         margin-left: auto;
+        
+//     }
+
+//     &__pic {
+//         width: auto;
+//         height: 100%;
+//     }
+// }

@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-family;
+    font-size: 100%;
+
+    color: $color-text;
+    background-color: $color-background;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-size: rem($font-size-medium);
+    font-weight: $font-weight;
+    line-height: ($line-height-medium / $font-size-medium);
+}
+
+h1,
+h2,
+h3,
+p,
+ul:not([class]),
+ol:not([class]) {
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+    font-size: rem($font-size-huge);
+    line-height: (rem($line-height-huge) / rem($font-size-huge));
+    font-weight: $font-weight-medium;
+
+    margin: 0;
+    
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-huge-tablet);
+        line-height: (rem($line-height-huge-tablet) / rem($font-size-huge-tablet));
+    }
+}
+
+h2 {
+    font-size: rem($font-size-large);
+    line-height: (rem($line-height-large) / rem($font-size-large));
+    font-weight: $font-weight-medium;
+
+    margin: 0;
+    
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-large-tablet);
+        line-height: (rem($line-height-large-tablet) / rem($font-size-large-tablet));
+    }
+}
+
+h3 {
+    font-size: rem($font-size-big);
+    line-height: (rem($line-height-big) / rem($font-size-big));
+    font-weight: $font-weight-medium;
+
+    margin: 0;
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-big-tablet);
+        line-height: (rem($line-height-big-tablet) / rem($font-size-big-tablet));
+    }
+}
+
+p {
+    @include text;
+    line-height: (rem($line-height-tiny) / rem($font-size-tiny));
+
+    @media #{$screen-tablet} {
+        line-height: (rem($line-height-medium) / rem($font-size-medium));
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color-accent;
+}
+
+
+ol, ul {
+	$padding-left: 25px;
+	$marker-size: 16px;
+
+	list-style: none;
+    padding: 0;
+    margin: 0;
+
+    font-size: $font-size-tiny;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-base;
+    }
+
+	&:not([class]) {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-self: stretch;
+		
+		list-style: unset;
+
+		padding-left: rem(30px);
+		margin-bottom: rem(10px);
+ 
+		& li {
+			margin-bottom: rem(10px);
+            line-height: normal;
+
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+
+			& > ol, ul {
+				margin-bottom: 0px;
+				padding-left: rem($padding-left);
+
+                &:first-child {
+                    margin-top: rem(10px);
+                }
+			}
+
+			&:not([class]) > ol li:before {
+				left: rem(-($padding-left));
+				content: counters(li, ".") " ";
+			}
+		}
+
+
+		& ol,ul {
+			margin-top: rem(10px);
+		}
+
+		& li::marker,
+		li:before {
+			font-size: rem($marker-size);
+
+			color: $cerise-red;
+		}
+	}
+
+	counter-reset: li;
+}
+
+ol {
+
+	&:not([class]) {
+		list-style-type: none;
+
+		& li {
+			position: relative;
+
+			padding-left: rem(5px);
+		}
+		
+		& li:before {
+			position: absolute;
+			left: rem(-15px);
+
+			counter-increment: li;
+
+			content: counters(li, ".") ". ";
+		}
+	}
+}
+
+
+
+img {
+    width: 100%;
+}
+
+blockquote {
+    font-size: $font-size-tiny;
+    line-height: $line-height-high;
+    background-color: $color-background;
+    margin: 0;
+    padding: rem(20px) rem(25px);
+    border-radius: $main-border-radius;
+    border-left: rem(5px) solid $color-blockquote-border;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-base;
+    }
+
+    @media #{$screen-tablet-max} {
+        padding-right: 0;
+    } 
+}
+
+label {
+    font-size: rem(14px);
+    color: #4B4B4B;
+    line-height: rem(19px);
+}
+
+span {
+    color: $color-accent;
+}

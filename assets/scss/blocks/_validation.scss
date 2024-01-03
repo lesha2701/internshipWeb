@@ -1,0 +1,17 @@
+.error {
+    font-size: rem($font-size-error);
+    line-height: rem($line-height-error);
+
+    color: $color-error;
+    border-color: $color-error;
+}
+
+.error + .select2 {
+    .select2-selection--single {
+        border-color: $color-error;
+    }
+}
+
+input.error {
+    font-size: rem($font-size-tiny);
+}

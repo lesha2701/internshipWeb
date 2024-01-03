@@ -1,0 +1,40 @@
+.indicators {
+
+    &--big & {
+
+        &__icon {
+            color: $color-white;
+        }
+
+        &__int {
+            color: $color-white
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: rem(12px);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: rem(3px);
+
+        &--none {
+            display: none;
+        }
+    }
+
+    &__icon {
+        width: rem(14px);
+        height: rem(14px);
+
+        color: $color-text-card;
+    }
+
+    &__int {
+        @include cards-info;
+    }
+}

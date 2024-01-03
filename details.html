@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>gui</title>
+</head>
+<body class="page" data-page="page">
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__pic" src="./public/images/icons/logo-svg.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__col header__col--search">
+                    <form class="form">
+                        <div class="form__row">
+                            <div class="form__col">
+                                <div class="header__search input-text input-text__search ">
+                                    <button href="#" class="input-text__search-icon">
+                                        <svg class="icon input-text__search-icon__svg">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-Search"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="input-text__field input-text__search-input field" type="text" placeholder="Найти...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__col header__col--profile">
+                    <div class="profile profile--hidden">
+                        <a href="#" class="profile__link">
+                            <div class="profile__block">
+                                <div class="profile__name">
+                                    <span class="profile__name-text">Алексей Тюленев</span>
+                                </div>
+                                <div class="profile__avatar">
+                                    <img class="profile__avatar-pic" src="./public/images/lamp.png" alt="">
+                                </div>
+                            </div>
+                            <div class="profile__icon">
+                                <svg class="profile__icon-pic icon">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-Profile"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__wrapper">
+        <div class="container container--sidebar">
+            <aside class="container__sidebar sidebar">
+                <div class="sidebar__items"> 
+                    <div class="sidebar__block">
+                        <div class="sidebar__title sidebar__title--desktop">
+                            <p class="sidebar__text">Меню раздела</p>
+                            <button class="sidebar__close">
+                                <svg class="sidebar__close-pic icon">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-Close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__link--active">Избранное</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Моя компания</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Моё развитие</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Новости компании</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link">Телефонная книга</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar__menu" data-sidebar="menu">
+                    <button class="sidebar__menu-btn">
+                        <svg class="sidebar__menu-pic icon">
+                            <use xlink:href="./public/images/icons/sprite.svg#icon-menu"></use>
+                        </svg>
+                        <p class="sidebar__menu-text">Меню раздела</p>
+                    </button>
+                </div>
+            </aside>
+
+            <div class="container--sidebar-block">
+                <nav class="breadcrumbs breadcrumbs--indent">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главаня</a>
+                        </li>
+            
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Статья</a>
+                        </li>
+            
+                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                            <a class="breadcrumbs__link">Как верстать</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>Заголовок страницы</h1>
+                <main class="contents">
+                    <section class="contents__details">
+                        <p class="contents__data">4 августа 2019</p>
+                        <h2>Заголовок новости</h2>
+                        <p>Проснувшись однажды утром после беспокойного сна, <span>Грегор Замза</span> обнаружил, что он
+                            у себя в постели превратился в страшное насекомое.</p>
+                        <img src="./public/images/lamp.png" alt="">
+                        <p>Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот</p>
+                        <ul>
+                            <li>На верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло</li>
+                            <li>Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами</li>
+                            <li>«Что со мной случилось?» – подумал он.</li>
+                        </ul>
+                        <p>Это не было сном. <span>Его комната</span>, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку.</p>
+                        <blockquote>На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. </blockquote>
+                        <p>Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. </p>
+                        <ol>
+                            <li>«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он
+                                <ol>
+                                    <li>но это было совершенно <span>неосуществимо</span></li>
+                                    <li>он привык спать на правом боку</li>
+                                    <li>а в теперешнем своем состоянии он никак не мог принять этого положения.</li>
+                                </ol>
+                            </li>
+                            <li>С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину.</li>
+                            <li>Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку.</li>
+                        </ol>
+                        <h3 class="contents__title">Заголовок третьего уровня</h3>
+                        <p>«Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! Изо дня в день в разъездах. Деловых волнений куда больше, чем на месте, <span>в торговом доме</span>, а кроме того, изволь терпеть тяготы дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай со все новыми и новыми людьми недолгие, никогда не бывающие сердечными отношения. Черт бы побрал все эт</p>
+                        <img src="./public/images/icons/notebook.png" alt="">
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__col">
+                <div class="footer__row">
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-youTube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row footer__row--menu">
+                    <div class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    
+                    <div class="footer__logo logo">
+                        <a href="#" class="logo__icon">
+                            <svg class="logo__icon-pic logo__footer-pic icon">
+                                <use xlink:href="./public/images/icons/sprite.svg#icon-logoSvg"></use>
+                            </svg>
+                        </a>         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

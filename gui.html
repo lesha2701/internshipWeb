@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>gui</title>
+</head>
+<body class="page">
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__col header__col--logo">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__pic" src="./public/images/icons/logo-svg.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__col header__col--search">
+                    <form class="form">
+                        <div class="form__row">
+                            <div class="form__col">
+                                <div class="header__search input-text input-text__search ">
+                                    <button href="#" class="input-text__search-icon">
+                                        <svg class="icon input-text__search-icon__svg">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-Search"></use>
+                                        </svg>
+                                    </button>
+                                    <input class="input-text__field input-text__search-input field" type="text" placeholder="Найти...">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__col header__col--profile">
+                    <div class="profile profile--hidden">
+                        <a href="#" class="profile__link">
+                            <div class="profile__block">
+                                <div class="profile__name">
+                                    <span class="profile__name-text">Алексей Тюленев</span>
+                                </div>
+                                <div class="profile__avatar">
+                                    <img class="profile__avatar-pic" src="./public/images/lamp.png" alt="">
+                                </div>
+                            </div>
+                            <div class="profile__icon">
+                                <svg class="profile__icon-pic icon">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-Profile"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="page__main main">
+        <div class="container container-gui">
+            <h2 class="block-gui__title">Заголовки</h2>
+            <h1>Заголовок первого уровня</h1>
+            <h2>Заголовок второго уровня</h2>
+            <h3>Заголовок третьего уровня</h3>
+
+            <h2 class="block-gui__title">Праграфы</h2>
+            <p>Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, doloribus provident optio deserunt magni esse necessitatibus modi maiores placeat aliquam doloremque sed dicta quisquam expedita voluptatibus ipsum magnam quibusdam dolorem.</p>
+     
+            <h2 class="block-gui__title">Ненумерованный список</h2>
+            <ul>
+                <li>Элемент ненумерованного списка 1</li>
+                <li>Элемент ненумерованного списка 2
+                    <ul>
+                        <li>Вложенный элемент списка</li>
+                        <li>Вложенный элемент списка</li>
+                    </ul>
+                </li>
+                <li>Элемент ненумерованного списка 3</li>
+            </ul>
+
+            <h2 class="block-gui__title">Нумерованные списки</h2>
+            <ol>
+                <li>Элмемент списка 1
+                    <ol>
+                        <li>Элемент списка 1.1</li>
+                        <li>Элемент списка 1.2</li>
+                        <li>Элемент списка 1.3</li>
+                    </ol>
+                </li>
+                <li>Элмемент списка 2</li>
+                <li>Элмемент списка 3</li>
+            </ol>
+
+            <h2 class="block-gui__title">Изображения</h2>
+            <img src="./public/images/lamp.png" alt="Лампа">
+
+            <h2 class="block-gui__title">Цитаты</h2>
+            <blockquote>На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. </blockquote>
+
+            <div class="block-gui">
+                <h2 class="block-gui__title">Ссылки</h2>
+                <a href="#" class="link">Ссылка</a>
+                <a href="#" class="link link--button">Ссылка в виде кнопки</a>
+                <a href="#" class="link link--button link--button--slider">Ссылка в слайдере</a>
+            </div>
+
+            <div class="block-gui">
+                <h2 class="block-gui__title">Кнопки</h2>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button">Обычная кнопка</button>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button button--vector">
+                                Обычная кнопка
+                                <svg class="icon button-pic">
+                                    <use xlink:href="./public/images/icons/sprite.svg#icon-vector"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button button--border">Кнопка слайдера</button>
+                        </div>
+                    </div>
+                </form>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button" disabled>Заблокированная кнопка</button>
+                        </div>
+                    </div>
+                </form>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button button--transparent">Кнопка без фона</button>
+                        </div>
+                    </div>
+                </form>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button button--transparent" disabled>Заблокированная кнопка без фона</button>
+                        </div>
+                    </div>
+                </form>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button button--circle button--icon">
+                                <span class="button__icon">
+                                    <svg class="icon button-pic">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="block-gui block-gui--input">
+                <h2 class="block-gui__title">Инпут</h2>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text">
+                                <label class="input-text__label input-text__label--main label" for="text">Поле ввода</label>
+                                <input class="input-text__field field" type="text" placeholder="Плейсхолдер">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text">
+                                <label class="input-text__label input-text__label--main input-text__label--obligatory label" for="text">Обязательное поле</label>
+                                <input class="input-text__field field" type="text" placeholder="Плейсхолдер">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text">
+                                <label class="input-text__label input-text__label--main input-text__label--disabled label" for="text">Неактивное поле</label>
+                                <input class="input-text__field field" type="text" placeholder="Плейсхолдер" disabled title="Поле заблокировано">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text">
+                                <label class="input-text__label input-text__label--main label" for="text">Нективное поле</label>
+                                <input class="input-text__field input-text__field--error field" type="text" placeholder="Плейсхолдер">
+                                <label class="input-text__label input-text__label--error label" for="text">Ошибка ввода</label>
+                            </div>  
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text input-text__search">
+                                <button href="#" class="input-text__search-icon">
+                                    <svg class="icon input-text__search-icon__svg">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Search"></use>
+                                    </svg>
+                                </button>
+                                <input class="input-text__field input-text__search-input field" type="text" placeholder="Найти...">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text">
+                                <label class="input-text__label input-text__label--main label" for="text">Введите дату</label>
+                                <input class="input-text__field field" type="text" placeholder="Дата" data-inputmask="'mask': '99.99.9999'">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <h2 class="block-gui__title">Textarea</h2>
+            <div class="textarea">
+                <label class="textarea__label label" id="textarea">Причина ненависти</label>
+                <textarea class="textarea__field" id="textarea" placeholder="Напишите причину"></textarea>
+            </div>
+
+            <div class="block-gui">
+                <h2 class="block-gui__title">Чекбоксы</h2>
+                <label class="checkbox">
+                    <input class="checkbox__hidden" type="checkbox" id="checkbox1" checked>
+                    <svg class="checkbox__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-tick"></use>
+                    </svg>
+                    <div class="checkbox__label">
+                        <label class="checkbox__label-text" for="checkbox1">Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух. Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух.Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух</label>
+                    </div>
+                </label>
+    
+                <label class="checkbox">
+                    <input class="checkbox__hidden" type="checkbox" id="checkbox2">
+                    <svg class="checkbox__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-tick"></use>
+                    </svg>
+                    <div class="checkbox__label">
+                        <label class="checkbox__label-text" for="checkbox3">Чекбоксы плохие</label>
+                    </div>
+                </label>
+
+                <label class="checkbox">
+                    <input class="checkbox__hidden" type="checkbox" id="checkbox3" checked disabled>
+                    <svg class="checkbox__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-tick"></use>
+                    </svg>
+                    <div class="checkbox__label">
+                        <label class="checkbox__label-text" for="checkbox3">Неактивен, выбран</label>
+                    </div>
+                </label>
+
+                <label class="checkbox">
+                    <input class="checkbox__hidden" type="checkbox" id="checkbox4" disabled>
+                    <svg class="checkbox__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-tick"></use>
+                    </svg>
+                    <div class="checkbox__label">
+                        <label class="checkbox__label-text" for="checkbox3">Неактивен, не выбран</label>
+                    </div>
+                </label>
+            </div>
+
+            <div class="block-gui">
+                <h2 class="block-gui__title">Радио</h2>
+                <label class="radio">
+                    <input class="radio__hidden" type="radio" id="contactChoice1" name="contact1" value="email" checked/>
+                    <svg class="radio__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-radio"></use>
+                    </svg>
+                    <label for="contactChoice2">Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух. Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух.Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух</label>
+                </label>
+
+                <label class="radio">
+                    <input class="radio__hidden" type="radio" id="contactChoice2" name="contact1" value="phone"/>
+                    <svg class="radio__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-radio"></use>
+                    </svg>
+                    <label for="contactChoice2">Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух. Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух.Слова — это лишь маленькие звенья, связующие большие чувства и стремления, о которых мы не говорим вслух</label>
+                </label>
+
+                <label class="radio">
+                    <input class="radio__hidden" type="radio" id="contactChoice3" name="contact2" value="mail" checked disabled/>
+                    <svg class="radio__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-radio"></use>
+                    </svg>
+                    <label for="contactChoice3">Mail</label>
+                </label>
+
+                <label class="radio">
+                    <input class="radio__hidden" type="radio" id="contactChoice4" name="contact2" value="addres" disabled/>
+                    <svg class="radio__flag">
+                        <use xlink:href="./public/images/icons/sprite.svg#icon-radio"></use>
+                    </svg>
+                    <label for="contactChoice4">Addres</label>
+                </label>
+            </div>
+
+            <div class="block__gui">
+                <h2 class="block-gui__title">Селекты</h2>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="form__col">
+                            <div class="input-text">
+                                <label class="input-text__label input-text__label--main input-text__label--obligatory label" for="text">Специализация</label>
+                                <div class="input-text__select">
+                                    <div class="select" data-select>
+                                        <select name="select" class="select__control" data-select-control data-placeholder="Выберите специализацию">
+                                            <option></option>
+                                            <option value="1">Мороженое с шоколадом</option>
+                                            <option value="2">Мороженое с ванилью</option>
+                                            <option value="3">Мороженое с вафлей</option>
+                                            <option value="4">Мороженое с фисташками</option>
+                                            <option value="5">Мороженое с фруктами</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="block__gui">
+                <h2 class="block-gui__title">Хлебные крошки</h2>
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главаня</a>
+                        </li>
+            
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Статья</a>
+                        </li>
+            
+                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                            <a class="breadcrumbs__link">Как верстать</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="block__gui">
+                <h2 class="block-gui__title">Табы</h2>
+                <div class="tabs tabs--blue tabs__gui" data-tabs>
+                    <nav class="tabs__items">
+                        <ul class="tabs__list">
+                            <li class="tabs__item tabs__item--active" data-tab="article">
+                                Статьи
+                            </li>
+                            <li class="tabs__item" data-tab="video">
+                                Видео
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="tabs__body">
+                        <div class="tabs__block tabs__block--active" data-tab-section="article">
+                            Статьи
+                        </div>
+                        <div class="tabs__block" data-tab-section="video">
+                            Видео
+                        </div>
+                    </div>
+                </div>       
+
+                <div class="tabs tabs--red" data-tabs>
+                    <nav class="tabs__items">
+                        <ul class="tabs__list tabs__list--red">
+                            <li class="tabs__item tabs__item--active" data-tab="news">
+                                Новости
+                            </li>
+                            <li class="tabs__item" data-tab="sale">
+                                Акции
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="tabs__body">
+                        <div class="tabs__block tabs__block--active" data-tab-section="news">
+                            Новости
+                        </div>
+                        <div class="tabs__block" data-tab-section="sale">
+                            Акции
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__gui">
+                <h2 class="block-gui__title">Карточки</h2>
+                <div class="cards">
+                    <ul class="cards__list">
+                        <li class="cards__item">
+                            <article class="card">
+                                <a href="#" class="card__link"></a>
+                                <button class="card__favorite">
+                                    <svg class="icon card__favorite-icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-pic" src="./public/images/icons/news1.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <div class="card__content content">
+                                        <h3 class="content__title card__content--text">В заголовке не должно быть больше двух строк. Если больше, текст обрезаться</h3>
+                                        <p class="content__descr card__content--text">В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. У него было 8 лапок и много глаз</p>
+                                    </div>
+                                    <div class="card__info info">
+                                        <p class="info__data">04.02.2020</p>
+                                        <div class="info__indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="cards__item">
+                            <article class="card">
+                                <a href="#" class="card__link"></a>
+                                <button class="card__favorite">
+                                    <svg class="icon card__favorite-icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-starFull"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-pic" src="./public/images/icons/news2.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <div class="card__content content">
+                                        <h3 class="content__title card__content--text">QSOFT</h3>
+                                        <p class="content__descr card__content--text">Сообщество “Мы – Землекопы”
+                                            добавило файл excavator.jpg</p>
+                                    </div>
+                                    <div class="card__info info">
+                                        <p class="info__data">04.02.2020</p>
+                                        <div class="info__indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="cards__item cards__item--last">
+                            <article class="card">
+                                <a href="#" class="card__link"></a>
+                                <button class="card__favorite">
+                                    <svg class="icon card__favorite-icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-starFull"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-icon" src="./public/images/icons/qsoft.svg">
+                                        <img class="card__image-pic" src="./public/images/icons/noPhoto.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <div class="card__content content">
+                                        <h3 class="content__title card__content--text">У этого поста нет фотографии</h3>
+                                        <p class="content__descr card__content--text">Текст в этом посте отсутствует</p>
+                                    </div>
+                                    <div class="card__info info">
+                                        <p class="info__data">04.02.2020</p>
+                                        <div class="info__indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="cards__item cards__item--big">
+                            <article class="card card--big">
+                                <a href="#" class="card__link"></a>
+                                <button class="card__favorite card__favorite">
+                                    <svg class="icon card__favorite-icon card__favorite-icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__image-big">
+                                    <div class="card__box">
+                                        <img class="card__image-pic card__image-pic" src="./public/images/icons/news3.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <div class="card__content content content--big">
+                                        <h3 class="content__title card__content--text">Спасите леса от вырубки</h3>
+                                        <p class="content__descr card__content--text">Табличку можно определить как физически прочный, надёжный носитель
+                                            письменной информации, относительно удобный в повседневном
+                                            использовании и транспортировке. Пишущим средством в этом случае, как
+                                            правило, выступало стило. Можно выделить два основных типа табличек: гл.../p>
+                                    </div>
+                                    <div class="card__info info info--big">
+                                        <p class="info__data info__data">04.02.2020</p>
+                                        <div class="info__indicators indicators indicators--big">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="cards__item cards__item--last">
+                            <article class="card">
+                                <a href="#" class="card__link"></a>
+                                <button class="card__favorite">
+                                    <svg class="icon card__favorite-icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </button>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-pic" src="./public/images/icons/news4.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <div class="card__content content">
+                                        <h3 class="content__title card__content--text">Спасите леса от вырубки</h3>
+                                        <p class="content__descr card__content--text">В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. У него было 8 лапок и много глаз</p>
+                                    </div>
+                                    <div class="card__info info">
+                                        <p class="info__data">04.02.2020</p>
+                                        <div class="info__indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block__gui">
+                <h2 class="block-gui__title">Акции</h2>
+                <div class="cards cards--stoks">
+                    <ul class="cards__list">
+                        <li class="cards__item">
+                            <article class="card card--stoks">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-pic" src="./public/images/icons/yoga.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <button class="card__favorite">
+                                        <svg class="icon card__favorite-icon">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__category category">
+                                        <a href="" class="category__text category__text-title">Йога</a>
+                                        <a href="" class="category__text">Студия Йогаджой</a>
+                                    </div>
+                                    <div class="card__content content content--stoks">
+                                        <h3 class="content__title card__content--text">В заголовке не должно быть больше двух строк. Если больше, текст обрезаться</h3>
+                                        <p class="content__descr card__content--text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило. Лежа на панцирнотвердой спине, он видел, стоило</p>
+                                    </div>
+                                    <div class="card__info info info--stoks">
+                                        <div class="info__block info__block">
+                                            <p class="info__data info__text">04.02.2020</p>
+                                            <p class="info__sentence info__text">Предложение активно</p>
+                                        </div>
+
+                                        <div class="info__indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item indicators__item--none">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="cards__item">
+                            <article class="card card--stoks card--stoks-left">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-pic" src="./public/images/icons/taxi.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <button class="card__favorite card__favorite-stoks">
+                                        <svg class="icon card__favorite-icon">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__category category">
+                                        <a href="" class="category__text category__text-title">Транспорт</a>
+                                        <a href="" class="category__text">Такси Арма</a>
+                                    </div>
+                                    <div class="card__content content content--stoks">
+                                        <h3 class="content__title card__content--text">Скидки на такси от компании «Таксопарк Арама»
+                                            предлагает скидки сотрудникам компании</h3>
+                                        <p class="content__descr card__content--text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</p>
+                                    </div>
+                                    <div class="card__info info info--stoks">
+                                        <div class="info__block info__block">
+                                            <p class="info__data info__text">04.02.2020</p>
+                                            <p class="info__sentence info__text">Завершено</p>
+                                        </div>
+
+                                        <div class="info__indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item indicators__item--none">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="cards__item">
+                            <article class="card card--stoks">
+                                <a href="#" class="card__link"></a>
+                                <div class="card__image">
+                                    <div class="card__box">
+                                        <img class="card__image-pic" src="./public/images/icons/cathedral.png" alt="news1">
+                                    </div>
+                                </div>
+                                <div class="card__wrapper">
+                                    <button class="card__favorite">
+                                        <svg class="icon card__favorite-icon">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__category category">
+                                        <a href="" class="category__text category__text-title">Экскурсии</a>
+                                        <a href="" class="category__text">ОАО «Спутник Москвича»</a>
+                                    </div>
+                                    <div class="card__content conten--stokst">
+                                        <h3 class="content__title card__content--text">Экскурсии с большими скидками</h3>
+                                        <p class="content__descr card__content--text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели.</p>
+                                    </div>
+                                    <div class="card__info info info--stoks">
+                                        <div class="info__block info__block">
+                                            <p class="info__data info__text">04.02.2020</p>
+                                            <p class="info__sentence info__text">Предложение активно</p>
+                                        </div>
+
+                                        <div class="info__indicators indicators indicators">
+                                            <ul class="indicators__list">
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-Like"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">123</div>
+                                                </li>
+                                                <li class="indicators__item indicators__item--none">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-comments"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">76</div>
+                                                </li>
+                                                <li class="indicators__item">
+                                                    <svg class="icon indicators__icon">
+                                                        <use xlink:href="./public/images/icons/sprite.svg#icon-eyes"></use>
+                                                    </svg>
+                                                    <div class="indicators__int">34</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block__gui">
+                <h2 class="block-gui__title">Карточки слайдера</h2>
+                <div class="slider">
+                    <div class="slider__notices notices">
+                        <ul class="notices__list notices__list--gui">
+                            <li class="notices__item notice">
+                                <div class="notice__wrapper">
+                                    <div class="notice__block">
+                                        <h3 class="notice__title">Важное уведомление ldfkldfldkfdlkfdfk</h3>
+                                        <div class="notice__icon">
+                                            <svg class="notice__icon-pic--info icon">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-info"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="notice__descr">Удаленная работа.
+                                        Инструкция для сотрудников
+                                        о том как защитить себя от корон...
+                                    </p>
+                                    <button class="button button--border notice__button">Пройти опрос</button>
+                                </div>
+                            </li>
+                            <li class="notices__item notice">
+                                <div class="notice__wrapper">
+                                    <div class="notice__block">
+                                        <h3 class="notice__title">Вопрос дня</h3>
+                                        <div class="notice__icon">
+                                            <svg class="notice__icon-pic--question icon">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-questionMarkCircle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="notice__descr">Вы адекватный?</p>
+                                    <div class="notice__button notice__button--question">
+                                        <button class="button button--transparent">Нет</button>
+                                        <button class="button button--border">Да</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="notices__item notice">
+                                <div class="notice__wrapper">
+                                    <div class="notice__block">
+                                        <h3 class="notice__title">Технические работы</h3>
+                                        <div class="notice__icon">
+                                            <svg class="notice__icon-pic--info-reverse icon">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-info2"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="notice__descr">Портал будет недоступен
+                                        14.08.2021 с 10:00 до 19:00
+                                    </p>
+                                    <button class="button button--border notice__button">Ясно-понятно</button>
+                                </div>
+                            </li>
+                            <li class="notices__item notice">
+                                <div class="notice__wrapper">
+                                    <div class="notice__block">
+                                        <h3 class="notice__title">Опрос недели тест обрезки test</h3>
+                                        <div class="notice__icon">
+                                            <svg class="notice__icon-pic--question icon">
+                                                <use xlink:href="./public/images/icons/sprite.svg#icon-questionMarkCircle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <p class="notice__descr">Какую книгу вы больше всего
+                                        любили, когда были маленьким?
+                                    </p>
+                                    <button class="button button--border notice__button">Пройти опрос</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="block-gui__title">Слайдеры</h2>
+            <div class="reviews">
+                <div class="reviews__slider slider slider--infinity">
+                    <div class="slider__box" data-carousel="infinity">
+                        <div class="swiper-container" data-carousel-container>
+                            <ul class="reviews__list swiper-wrapper">
+                                <li class="reviews__item swiper-slide swiper-slide--infinity">
+                                    <article class="review review--slide">
+                                        <div class="review__user user">
+                                            <img class="user__icon" src="./public/images/lamp.png" alt="profile_picture">
+                                            <p class="user__name">Алексей Тюленев</p>
+                                            <p class="user__date">05.04.2019</p>
+                                        </div>
+                                        <p class="review__text">Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке! Вы можете приобрести нашу продукцию через наших партнеров - </p>
+                                        <div class="review__image">
+                                            <img class="review__pic" src="./public/images/icons/magnit.svg" alt="">
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="reviews__item swiper-slide swiper-slide--infinity">
+                                    <article class="review review--slide">
+                                        <div class="review__user user">
+                                            <img class="user__icon" src="./public/images/icons/copybook.png" alt="profile_picture">
+                                            <p class="user__name">Антон Антонов</p>
+                                            <p class="user__date">15.03.2019</p>
+                                        </div>
+                                        <p class="review__text">Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!  </p>
+                                        <div class="review__image">
+                                            <img class="review__pic" src="./public/images/icons/sber.svg" alt="">
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="reviews__item swiper-slide swiper-slide--infinity">
+                                    <article class="review review--slide">
+                                        <div class="review__user user">
+                                            <img class="user__icon" src="./public/images/icons/news1.png" alt="profile_picture">
+                                            <p class="user__name">Алексей Тюленев test</p>
+                                            <p class="user__date">05.04.2019</p>
+                                        </div>
+                                        <p class="review__text">Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!  </p>
+                                        <div class="review__image">
+                                            <img class="review__pic" src="./public/images/icons/magnit.svg" alt="">
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                            <div class="slider__buttons">
+                                <div class="slider__buttons-item swiper-button-prev" data-carousel-prev>
+                                    <button type="button" class="slider__button slider__button--prev button--circle">
+                                        <svg class="slider__button-icon icon">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_slider"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="slider__buttons-item swiper-button-next" data-carousel-next>
+                                    <button type="button" class="slider__button slider__button--next button--circle">
+                                        <svg class="slider__button-icon icon">
+                                            <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_slider"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="slider__notices notices">
+                    <div class="slider__box" data-carousel="notifications">
+                        <div class="swiper-container" data-carousel-container>
+                            <ul class="notices__list swiper-wrapper">
+                                <li class="notices__item notice swiper-slide">
+                                    <div class="notice__wrapper">
+                                        <div class="notice__block">
+                                            <h3 class="notice__title">Важное уведомление ldfkldfldkfdlkfdfk</h3>
+                                            <div class="notice__icon">
+                                                <svg class="notice__icon-pic--info icon">
+                                                    <use xlink:href="./public/images/icons/sprite.svg#icon-info"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="notice__descr">Удаленная работа.
+                                            Инструкция для сотрудников
+                                            о том как защитить себя от корон...
+                                        </p>
+                                        <button class="button button--border notice__button">Пройти опрос</button>
+                                    </div>
+                                </li>
+                                <li class="notices__item notice swiper-slide">
+                                    <div class="notice__wrapper">
+                                        <div class="notice__block">
+                                            <h3 class="notice__title">Вопрос дня</h3>
+                                            <div class="notice__icon">
+                                                <svg class="notice__icon-pic--question icon">
+                                                    <use xlink:href="./public/images/icons/sprite.svg#icon-questionMarkCircle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="notice__descr">Вы адекватный?</p>
+                                        <div class="notice__button notice__button--question">
+                                            <button class="button button--transparent">Нет</button>
+                                            <button class="button button--border">Да</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notices__item notice swiper-slide">
+                                    <div class="notice__wrapper">
+                                        <div class="notice__block">
+                                            <h3 class="notice__title">Технические работы</h3>
+                                            <div class="notice__icon">
+                                                <svg class="notice__icon-pic--info-reverse icon">
+                                                    <use xlink:href="./public/images/icons/sprite.svg#icon-info2"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="notice__descr">Портал будет недоступен
+                                            14.08.2021 с 10:00 до 19:00
+                                        </p>
+                                        <button class="button button--border notice__button">Ясно-понятно</button>
+                                    </div>
+                                </li>
+                                <li class="notices__item notice swiper-slide">
+                                    <div class="notice__wrapper">
+                                        <div class="notice__block">
+                                            <h3 class="notice__title">Опрос недели тест обрезки test</h3>
+                                            <div class="notice__icon">
+                                                <svg class="notice__icon-pic--question icon">
+                                                    <use xlink:href="./public/images/icons/sprite.svg#icon-questionMarkCircle"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="notice__descr">Какую книгу вы больше всего
+                                            любили, когда были маленьким?
+                                        </p>
+                                        <button class="button button--border notice__button">Пройти опрос</button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="slider__pagination swiper-pagination" data-carousel-pagination></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block__gui">
+                <h2>Спойлер</h2>
+    
+                <div class="accordion">
+                    <div class="accordion__item" data-accordion>
+                        <div class="accordion__header" data-accordion-toggle>
+                            <h3 class="accordion__title">Обязательно ли регистрироваться на сайте, чтобы заказать продукцию?</h3>
+                            <button class="accordion__toggle button button--circle button--icon">
+                                <span class="button__icon">
+                                    <svg class="accordion__toggle-icon icon button-pic">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-arrow_down"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+    
+                        <div class="accordion__body" data-accordion-content>
+                            Вы можете приобрести нашу продукцию через наших партнеров - консультантов в авторизованных дистрибьютерских центрах, либо зарегистрировавшись на нашем сайте. Дополнительно после регистрации Вы получите скидку на весь ассортимент товаров, а также доступ к специальным предложениям. Зарегистрируйтесь сейчас и экономьте на каждой покупке!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="block-gui__title">Модальные окна</h2>
+            <div class="block__gui">
+
+                <button type="button"
+                    class="button"
+                    data-modal-type="modal"
+                    data-src="#techical-support-1">
+                    Окно с input
+                </button>
+
+                <article id="techical-support-1" class="modal modal--small modal--centered" style="display: none;">
+                    <div class="modal__content">
+                        <header class="modal__section modal__section--header">
+                            <p class="modal__title">Техническая поддержка</p>
+                        </header>
+                        <section class="modal__section modal__section--content">
+                            <form class=" modal__form form" data-form>
+                                <div class="modal__form-input">
+                                    <div class="form__row modal__section--input">
+                                        <div class="form__col">
+                                            <div class="input-text">
+                                                <label class="input-text__label input-text__label--main input-text__label--obligatory label" for="text">Тема</label>
+                                                <input class="input-text__field field" type="text" name="topic" placeholder="Напишите тему">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__col">
+                                            <div class="textarea">
+                                                <label class="textarea__label label" id="textarea">Напишите вопрос</label>
+                                                <textarea class="textarea__field" id="textarea" placeholder="Причина"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__section--actions">
+                                    <button type="submit" class="modal__button button">Отправить</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </article>
+
+                <button type="button"
+                    class="button"
+                    data-modal-type="modal"
+                    data-src="#techical-support-2">
+                    Окно с select
+                </button>
+
+                <article id="techical-support-2" class="modal modal--small modal--centered modal--email" style="display: none;">
+                    <div class="modal__content">
+                        <header class="modal__section modal__section--header modal__section">
+                            <p class="modal__title">Техническая поддержка</p>
+                        </header>
+                        <section class="modal__section modal__section--content">
+                            <form class=" modal__form form" data-form>
+                                <div class="modal__form-input modal__form-input--email">
+                                    <div class="form__row">
+                                        <div class="form__col">
+                                            <div class="input-text">
+                                                <label class="input-text__label input-text__label--main input-text__label--obligatory label" name="modalSelect" for="text">Тип обращения</label>
+                                                <div class="input-text__select">
+                                                    <div class="select" data-select>
+                                                        <select name="select" class="select__control" data-select-control data-modal data-placeholder="Выберите тип обращения">
+                                                            <option></option>
+                                                            <option value="question">Задать вопрос</option>
+                                                            <option value="bug">Неработающая функциональность</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row modal__section--remove" data-modal-email>
+                                        <div class="form__col">
+                                            <div class="input-text">
+                                                <label class="input-text__label input-text__label--main input-text__label--obligatory label" name="modalEmail" for="email">E-Mail</label>
+                                                <input class="input-text__field field" type="text" placeholder="E-Mail..." name="email" data-inputmask="'alias': 'email'">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__col">
+                                            <div class="textarea">
+                                                <label class="textarea__label label" id="textarea">Напишите вопрос</label>
+                                                <textarea class="textarea__field" id="textarea" placeholder="Причина"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__section--actions">
+                                    <button type="submit" class="modal__button button">Отправить</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__col">
+                <div class="footer__row">
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-youTube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="social__icon">
+                                    <svg class="social__icon-pic icon">
+                                        <use xlink:href="./public/images/icons/sprite.svg#icon-inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row footer__row--menu">
+                    <div class="footer__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    
+                    <div class="footer__logo logo">
+                        <a href="#" class="logo__icon">
+                            <svg class="logo__icon-pic logo__footer-pic icon">
+                                <use xlink:href="./public/images/icons/sprite.svg#icon-logoSvg"></use>
+                            </svg>
+                        </a>         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

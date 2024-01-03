@@ -1,0 +1,32 @@
+.contents {
+
+    padding: rem(20px);
+    padding-bottom: rem(50px);
+    padding-top: rem(50px);
+    margin-top: rem(30px);
+
+    background-color: $color-white;
+
+    @media #{$screen-tablet} {
+        padding: rem(50px) rem(40px);
+    }
+
+    @media #{$screen-desktop} {
+        margin-top: rem(40px);
+    }
+
+    &__details {
+        margin: 0 auto;
+        max-width: rem(700px);
+    }
+
+    &__data {
+        font-size: $font-size-base;
+
+        color: $light-slate-grey;
+    }
+
+    &__title {
+        margin-top: rem(50px);
+    }
+}

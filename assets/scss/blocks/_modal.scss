@@ -1,0 +1,187 @@
+.modal {
+    border-radius: rem(24px);
+    box-shadow: 0 rem(12px) rem(24px) rgba($blackish-blue, .16);
+
+    &--small {
+        width: rem(610px);
+    }
+
+    &--small & {
+        &__section {
+            @media #{$screen-tablet} {
+                padding: 0 rem(120px);
+            }
+        }
+    }
+
+    &--centered & {
+        &__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &--email {
+
+        .fancybox {
+
+            &-close {
+                top: rem(-18px) !important;
+                right: rem(-13px) !important;
+
+                @media #{$screen-tablet} {
+                    top: rem(-23px) !important;
+                    right: rem(-29px) !important;
+                }
+
+                &-icon {
+                    color: $color-white !important;
+                }
+            }
+        }
+    }
+
+    &--email & {
+        &__section {
+            &--header {
+                align-self: flex-start;
+    
+                @media #{$screen-tablet} {
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        height: auto !important;
+        max-width: 100%;
+
+        padding: rem(32px) 0;
+
+        @media #{$screen-tablet} {
+            padding: rem(48px) 0;
+        }
+    }
+    
+    &__section {
+        padding: 0 rem(16px);
+
+        &--header {
+            flex-shrink: 0;
+
+            margin-bottom: rem(35px);
+        }
+
+        &--content {
+            flex-grow: 1;
+        }
+
+        &--actions {
+            margin-top: rem(40px);
+        }
+
+        &--email {
+            margin-bottom: rem(50px);
+
+            @media #{$screen-tablet} {
+                margin-bottom: rem(45px);
+            }
+
+        }
+
+        &--remove {
+            display: none;
+        }
+
+        &--add{
+            display: block;
+        }
+    }
+
+    &__form {
+        width: 100%;
+
+        &-input {
+            display: flex;
+            flex-direction: column;
+            gap: rem(60px);
+
+            @media #{$screen-tablet} {
+                gap: rem(40px);
+            }
+
+            &--email {
+                gap: rem(50px);
+
+                @media #{$screen-tablet} {
+                    gap: rem(40px);
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-size: $font-size-big;
+        font-weight: $font-weight-medium;
+        line-height: rem(28px);
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    .fancybox {
+
+        &-content {
+            overflow: visible;
+        }
+
+        &-bg {
+            background: rgba($tuna, .55);
+        }
+
+        &-close {
+            $button-offset: 12px;
+
+            position: absolute;
+            top: rem($button-offset);
+            right: rem($button-offset);
+
+            cursor: pointer;
+
+            @media #{$screen-tablet} {
+                $button-offset: 12px;
+
+                top: rem($button-offset);
+                right: rem($button-offset);
+    
+            }
+
+            &-icon {
+                $icon-size: 24px;
+    
+                width: rem($icon-size);
+                height: rem($icon-size);
+    
+                color: $picton-blue;
+            }
+        }
+
+        &-navigation {
+            display: none;
+        }
+
+        &-slide {
+            padding: 0 rem(16px);
+        }
+
+        &-content {
+            padding: 0;
+        }
+    }
+}

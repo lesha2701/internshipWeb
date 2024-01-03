@@ -1,0 +1,210 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$blackish-blue: #121920;
+$color-white: #fff;
+$light-slate-grey: #768298;
+$light-steel-blue: #BBC4D6;
+$light-blue-gray: #6680AE;
+$athens-gray: #ebebf1;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$cerise-red: #dc2c53;
+$carnation: #f95a59;
+$persian-red: #ff3332;
+$snow-white: #fafafa;
+$golden-grass: #dc971f;
+$polar: #f7fafd;
+$tiber: #0a2b37;
+$athens-gray: #f4f3f6;
+$tuna: #3a3a43;
+$salt-box: #69676d;
+$brick-red: #d82f49;
+$picton-blue: #37a7df;
+
+
+$color-text: $blackish-blue;
+
+$color-background-block: $color-white$color-white;
+
+$color-text-card: $light-slate-grey;
+$color-focus: $light-slate-grey;
+$color-search: $light-slate-grey;
+
+$color-text-navigate: $light-steel-blue;
+$color-footer-icon: $light-steel-blue;
+$color-disabled: $light-steel-blue;
+$color-input-text: $light-steel-blue;
+
+$color-question: $light-blue-gray;
+$color-button-hover: $light-blue-gray;
+
+$color-no-active: $athens-gray;
+$color-border: $athens-gray;
+$color-textarea: $athens-gray;
+
+$color-accent: $curious-blue;
+
+$color-slider-active: $tapestry;
+
+$color-list-number: $cerise-red;
+$color-navigate-active: $cerise-red;
+$color-blockquote-border: $cerise-red;
+
+$color-error: $carnation;
+
+$color-info: $persian-red;
+
+$color-slider-hover-button: $golden-grass;
+
+$color-slider-button: $polar;
+
+$color-arrow: $tiber;
+
+$color-background: $snow-white;
+
+
+
+/**
+* Fonts
+*/
+$font-family-custom: 'Roboto';
+$font-family-default: sans-serif;
+
+$font-path: '../../public/fonts';
+$font-name-medium: 'Roboto-Medium';
+$font-name-regular: 'Roboto-Regular';
+$font-family: $font-family-custom, $font-family-default;
+
+$font-weight: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-normal: normal;
+
+$font-size-base: 16px;
+$line-height-base: 24px;
+
+$font-size-review-small: rem(11px);
+$line-height-review-small: rem(15px);
+
+$font-size-review-middle: rem(12px);
+$line-height-review-middle: rem(16px);
+
+$font-size-review-big: rem(14px);
+$line-height-review-big: rem(22px);
+
+$font-size-error: 10px;
+$line-height-error: 16px;
+
+$font-size-small: 12px;
+$font-height-small: 16px;
+
+$font-size-tiny: 14px;
+$font-height-tine-small: 20px;
+$line-height-tiny: 28px;
+
+$font-size-medium: 16px;
+$line-height-medium: 27px;
+
+$font-size-high: 18px;
+$line-height-high: 25px;
+
+
+$font-size-big: 20px;
+$line-height-big: 25px;
+$font-size-big-tablet: 24px;
+$line-height-big-tablet: 30px;
+
+$font-size-large: 24px;
+$line-height-large: 30px;
+$font-size-large-tablet: 30px;
+$line-height-large-tablet: 38px;
+
+$font-size-huge: 30px;
+$line-height-huge: 39px;
+$font-size-huge-tablet: 36px;
+$line-height-huge-tablet: 47px;
+
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-desktop: "(min-width: 1440px)";
+$screen-tablet: "(min-width: 768px)";
+$screen-tablet-max: "(max-width: 768px)";
+$screen-desktop-max: "(max-width: 1439px)";
+
+$screen-min: 375px;
+
+/**
+* Layout
+*/
+$width-container: 1240px;
+$checkbox-width: 20px;
+$checkbox-heigth: 20px;
+$radio-width: 20px;
+$radio-height: 20px;
+$search-width: 24px;
+$search-height: 24px;
+
+$gap-container: 20px;
+$gap-content: 32px;
+$gap-sidebar: 32px;
+
+
+/**
+* Sizes
+*/
+$card-padding: 20px;
+$paragraph-padding: 20px;
+
+$input-width: 335px;
+$input-height: 50px;
+
+$top-padding-link-slider: 6px;
+$left-padding-link-slider: 30px;
+
+
+/**
+* Transitions and Animations
+*/
+$transition: all 0.3s;
+$transition-time: .3s;
+$transition-animation: ease-in-out;
+
+
+
+/**
+* Radius
+*/
+$main-border-radius: 5px;
+$border-radius: 8px;
+$border-review: 24px;
+$border-cards: 8px;
+$border-accordion: 12px;
+
+
+/**
+* Box-shadows
+*/
+$shadow-cards: 0px 3px 10px 0px rgba(164, 164, 164, 0.03), 0px 12px 40px 0px rgba(0, 0, 0, 0.03);
+$shadow-header: 0px 3px 10px 0px rgba(164, 164, 164, 0.03), 0px 12px 40px 0px rgba(0, 0, 0, 0.03);;
+$shadow-footer: 0px 3px 10px 0px rgba(164, 164, 164, 0.03);
+$shadow-tinny:  0px 4px 16px 0px rgba(0, 0, 0, 0.24);
+
+
+
+/**
+* Z-indexes
+*/
+$z-big: 50;
+$z-middle: 30;
+$z-small: 10;
+$z-min: 1
+

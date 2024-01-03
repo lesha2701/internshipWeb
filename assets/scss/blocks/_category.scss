@@ -1,0 +1,22 @@
+.category {
+
+    display: flex;
+
+
+    &__text{
+        position: relative;
+
+        font-size: $font-size-small;
+
+        @include paddind-for-cards;
+
+        &-title {
+
+            &::after {
+                @include line-for-cards;
+
+                right: 0;
+            }
+        }
+    }
+}

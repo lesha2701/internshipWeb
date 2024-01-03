@@ -1,0 +1,13 @@
+.tippy-box {
+    font-size: rem($font-size-tiny);
+    font-weight: $font-weight-medium;
+
+    background-color: $color-white;
+    color: $tuna;
+
+    box-shadow: $shadow-tinny;
+}
+
+.tippy-content {
+    padding: rem(8px) rem(12px);
+}

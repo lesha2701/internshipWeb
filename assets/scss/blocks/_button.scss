@@ -1,0 +1,99 @@
+.button {
+    background-color: $color-accent;
+    padding: rem(10px) rem(30px);
+    color: $color-white;
+    border: 0;
+    border-radius: $main-border-radius;
+    transition: $transition;
+    
+    &:hover {
+        background-color: $light-blue-gray;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+    
+    &:focus {
+        outline: 0;
+    }
+
+    &:disabled {
+        background-color: $color-no-active;
+        color: $color-disabled;
+    }
+    
+    &--transparent {
+        background-color: transparent;
+        color: $curious-blue;
+        padding: 0;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-button-hover;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+
+        &:disabled {
+            color: $color-disabled;
+            background-color: transparent;
+        }
+    }
+
+    &--border {
+        border-radius: rem(5px) 0 rem(5px) 0;
+        font-size: $font-size-tiny;
+        padding-top: rem(6px);
+        padding-bottom: rem(6px);
+    }
+
+    &--vector {
+        display: flex;
+        align-items: center;
+        gap: rem(10px);
+
+        font-size: $font-size-tiny;
+        line-height: rem(15px);
+    }
+
+    &--vector & {
+
+        &-pic {
+            width: rem(12px);
+            height: rem(9px);
+        }
+    }
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+    &--icon {
+        padding: rem(5px);
+        background-color: $color-white;
+
+        &:hover {
+            background-color: $color-white;
+        }
+    }
+
+    &--icon & {
+        &-pic {
+            width: rem(16px);
+            height: rem(16px);
+            color: $color-text;
+        }
+    }
+
+    &--small {
+        width: rem(12px);
+        height: rem(12px);
+    }
+}

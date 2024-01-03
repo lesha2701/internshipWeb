@@ -1,0 +1,146 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+@mixin block {
+    width: rem(80);
+    height: rem(80);
+    background-color: $outer-space;
+}
+
+@mixin cards {
+    border-radius: 8px;
+    box-shadow: $shadow-cards;
+}
+
+@mixin text {
+    font-size: rem($font-size-tiny);
+    font-weight: $font-weight;
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-medium);
+    }
+}
+
+@mixin border-for-search {
+    border: 1px solid $color-border;
+    padding: rem(8px) rem(10px);
+    border-radius: $main-border-radius;
+}
+
+@mixin cards-info {
+    font-size: $font-size-small;
+    line-height: normal;
+    color: $color-text-card;
+}
+
+@mixin paddind-for-cards {
+    padding-left: rem(5px);
+    padding-right: rem(5px);
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin line-for-cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    
+    width: rem(1px);
+    height: rem(10px);
+    
+    background-color: $light-steel-blue;
+
+    content: '';
+}
+
+@mixin underLine {
+    width: rem(102px);
+    height: rem(4px);
+
+    @media #{$screen-tablet} {
+        width: 149px;
+        height: 6px;
+    }
+
+    @media #{$screen-desktop} {
+        width: 262px;
+        height: 11px;
+    }
+}
+
+@mixin paddingSection {
+    padding: 40px 0 60px;
+
+    @media #{$screen-tablet} {
+        padding: 50px 0 60px;
+    }
+
+    @media #{$screen-desktop} {
+        padding: 100px 0 100px;
+    }
+}
+
+@mixin blockTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$screen-tablet} {
+        align-items: flex-start;
+    }
+}
+
+@mixin titleBlock {
+    font-size: rem($font-size-high);
+    line-height: rem(22px);
+    font-weight: $fort-weight-semi;
+
+    @media #{$screen-tablet} {
+        font-size: rem(22px);
+        line-height: rem(30px);
+    }
+
+    @media #{$screen-desktop} {
+        font-size: rem(36px);
+        line-height: rem(50px);
+    }
+}
+
+@mixin marginLine {
+    margin-top: rem(20px);
+
+    @media #{$screen-tablet} {
+        margin-top: rem(30px);
+    }
+
+    @media #{$screen-desktop} {
+        margin-top: rem(60px);
+    }
+}

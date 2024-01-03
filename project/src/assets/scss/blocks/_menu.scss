@@ -1,0 +1,19 @@
+.menu {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(20px);
+
+        @media #{$screen-tablet} {
+            flex-direction: row;
+            gap: rem(30px);
+        }
+    }
+
+    &__item {
+        font-size: $font-size-tiny;
+        line-height: rem(18px);
+    }
+}

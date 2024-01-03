@@ -1,0 +1,81 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+@mixin block {
+    width: rem(80);
+    height: rem(80);
+    background-color: $outer-space;
+}
+
+@mixin cards {
+    border-radius: 8px;
+    box-shadow: $shadow-cards;
+}
+
+@mixin text {
+    font-size: rem($font-size-tiny);
+    font-weight: $font-weight;
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-medium);
+    }
+}
+
+@mixin border-for-search {
+    border: 1px solid $color-border;
+    padding: rem(8px) rem(10px);
+    border-radius: $main-border-radius;
+}
+
+@mixin cards-info {
+    font-size: $font-size-small;
+    line-height: normal;
+    color: $color-text-card;
+}
+
+@mixin paddind-for-cards {
+    padding-left: rem(5px);
+    padding-right: rem(5px);
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin line-for-cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    
+    width: rem(1px);
+    height: rem(10px);
+    
+    background-color: $light-steel-blue;
+
+    content: '';
+}
